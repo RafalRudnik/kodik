@@ -1,0 +1,85 @@
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 5em;
+	width: 100%;
+}
+
+.mainNumber {
+	display: flex;
+	align-items: center;
+	min-height: 50svh;
+
+	.numbers {
+		font-size: 36px;
+		cursor: pointer;
+	}
+	svg {
+		width: 180px;
+		filter: url('#filter');
+
+		path {
+			display: none;
+		}
+
+		circle {
+			fill: black;
+		}
+	}
+}
+
+.whywe {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2em;
+	width: 70%;
+}
+.whyweNav {
+	display: flex;
+	gap: 1em;
+	button {
+		width: fit-content;
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+		font-size: 2rem;
+	}
+}
+
+.whyweTxt {
+	display: flex;
+	align-items: center;
+	height: 200px;
+	overflow: hidden;
+	h3 {
+		padding-top: 0.2em;
+		padding-bottom: 0.5em;
+	}
+	p {
+		color: rgb(101, 99, 99);
+		line-height: 140%;
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.whywe {
+		width: 50%;
+	}
+	.mainNumber {
+		svg {
+			width: 300px;
+		}
+	}
+	.whyweTxt {
+		align-items: flex-start;
+		h3 {
+			font-size: 2.6rem;
+		}
+		p {
+			font-size: 2rem;
+		}
+	}
+}
